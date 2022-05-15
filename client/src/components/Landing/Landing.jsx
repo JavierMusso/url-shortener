@@ -29,6 +29,7 @@ const Landing = () => {
               placeholder="Enter link here..."
               value={input}
               onChange={(e) => handleChange(e, setInput)}
+              maxLength="250"
             />
             <input type="submit" value="Shorten URL" />
           </form>
