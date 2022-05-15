@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./Success.module.css";
 
 const Success = ({ url }) => {
   const handleCopy = (url) => {
@@ -6,9 +7,9 @@ const Success = ({ url }) => {
   };
 
   return (
-    <div>
+    <div className={styles.Success}>
       <p>
-        Shortened URL: <a href={`http://${url}`}>{url}</a>
+        ✅ Shortened URL: <a href={`http://${url}`}>{url}</a>
       </p>
       <button onClick={() => handleCopy(url)}>Copy link!</button>
     </div>
