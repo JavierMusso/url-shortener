@@ -19,11 +19,7 @@ const Redirect = () => {
     getUrl(id);
   }, [id]);
 
-  return (
-    <div>
-      <h1>Redireccionando...</h1>
-    </div>
-  );
+  return <div></div>;
 };
 
 export default Redirect;
